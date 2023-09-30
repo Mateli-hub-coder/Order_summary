@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
 }
 .content {
     display: block;
@@ -29,8 +29,9 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: white;
-    margin: 40px 40px;
-    height: 80vh;
+    margin: 0px 50px;
+    width: 80vw;
+    height: 90vh;
     z-index: 99;
     box-shadow: 1px 1px 6px .5px grey;
     border-radius: 14px;
@@ -40,14 +41,14 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 34%;
+    top: 43%;
 }
 .content_header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 24px 0px;
-    font-size: 30px;
+    margin: 10px 0px;
+    font-size: 20px;
     font-weight: 900;
     color: hsl(223, 47%, 23%);
 }
@@ -56,7 +57,7 @@ body {
     align-items: center;
     justify-content: center;
     color: rgb(107, 107, 107);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 .flex_container {
@@ -65,38 +66,38 @@ body {
     justify-content: center;
     background-color: hsl(225, 100%, 98%);
     padding: 10px 0px;
-    margin: 10px 15px;
+    margin: 14px 15px;
     border-radius: 10px;
 }
 .flex_img {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     position: relative;
-    right: 12%;
+    right: 20%;
 }
 h4 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: capitalize;
     color: hsl(223, 47%, 23%);
     position: relative;
-    right: 22px;
+    right: 65%;
 }
 .p4 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     color: rgb(107, 107, 107);
     position: relative;
-    right: 22px;
+    right: 65%;
 }
 a {
     display: flex;
@@ -105,7 +106,7 @@ a {
     font-size: 18px;
     color: hsl(245, 75%, 52%);
     position: relative;
-    left: 18px;
+    left: 50px;
     font-weight: 700;
 }
 a:hover {
@@ -119,14 +120,14 @@ a:hover {
     border-radius: 10px;
     width: 70vw;
     position: relative;
-    left: 6%;
+    left: 7%;
     top: 12px;
     padding: 12px 0px;
     border: none;
     outline: none;
     background-color: hsl(245, 75%, 52%);
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
  }
  
@@ -140,142 +141,152 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: rgb(107, 107, 107); 
     margin-top: 30px; 
 } 
-/* body {
-        display: flex;
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: block;
         align-items: center;
         justify-content: center;
-        background-image: url(../images/pattern-background-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: hsl(225, 100%, 94%);
         width: 100vw;
+        height: 100vh;
     }
+    .content {
+        position: relative;
+        width: 80vw;
+        height: 78vh;
+        position: relative;
+        top: 80px;
+        left: 30px;
+    }
+    .content_text {
+        position: relative;
+        top: 42%;
+    } 
+    .content_header {
+        margin: 15px 0px;
+        font-size: 32px;
+    }
+    .p1, .p2, .p3{
+        font-size: 24px;
+    }
+    .flex_container {
+        padding: 20px 0px;
+        margin: 20px 28px;
+    }
+    .flex_img {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        right: 24%;
+    }
+    h4 {
+        font-size: 26px;
+        position: relative;
+        right: 130px;
+    }
+    .p4 {
+        font-size: 26px;
+        position: relative;
+        right: 130px;
+    }
+    a {
+        font-size: 26px;
+        position: relative;
+        left: 80px;
+    }
+    .btn {
+        padding: 20px 0px;
+        font-size: 20px;
+     }
+     .p5 {
+        font-size: 26px;
+        margin-top: 40px; 
+    } 
+}
+
+@media only screen and (min-width: 992px) {
+
     .container {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 95vh;
+        height: 70vh;
     }
     .content {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-        width: 20vw;
-        height: 75vh;
-        z-index: 99;
-        box-shadow: 1px 1px 6px .5px grey;
-        border-radius: 10px;
+        width: 30vw;
+        height: 92vh;
     }
 
     .content_text {
         display: block;
         align-items: center;
-        justify-content: space-evenly;
-        width: 20vw;
+        justify-content: center;
+        width: 30vw;
+        position: relative;
+        top: 36%;
     }
     .content_header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 30px 0px;
-        font-size: 16px;
-        font-weight: 900;
-        color: hsl(223, 47%, 23%);
+        font-size: 24px;
     }
     .p1, .p2, .p3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgb(107, 107, 107);
-        font-size: 12px;
-        font-weight: 500;
+        font-size: 16px;
     }
     
     .flex_container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: hsl(225, 100%, 98%);
         padding: 10px 0px;
-        margin: 10px 15px;
-        border-radius: 10px;
+        margin: 20px 15px;
     }
     .flex_img {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 38px;
-        height: 38px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 45px;
+    }
+    h4 {
+        font-size: 16px;
         position: relative;
         right: 30px;
     }
-    h4 {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        font-size: 12px;
-        font-weight: 700;
-        color: hsl(223, 47%, 23%);
-        position: relative;
-        right: 22px;
-    }
     .p4 {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        font-size: 12px;
-        font-weight: 400;
-        color: rgb(107, 107, 107);
+        font-size: 16px;
         position: relative;
-        right: 22px;
+        right: 30px;
     }
     a {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        font-size: 12px;
-        color: hsl(245, 75%, 52%);
+        font-size: 16px;
         position: relative;
-        left: 35px;
-        font-weight: 700;
-    }
-    a:hover {
-        color: hsl(224, 23%, 55%);
+        left: 48px;
     }
     .btn {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin: 15px 30px;
-       border-radius: 10px;
-       border: none;
-       outline: none;
-       padding: 6px 56px;
-       background-color: hsl(245, 75%, 52%);
-       color: white;
-       font-size: 10px;
-       font-weight: 900;
-       box-shadow: 1px 10px hsl(225, 100%, 94%);
-    }
-    
-    .btn:hover{
-       background-color: hsl(224, 23%, 55%);
-       color: white;
-    }
-    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 26vw;
+        position: relative;
+        left: 7%;
+        top: 6px;
+        padding: 10px 0px;
+        border: none;
+        outline: none;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        font-size: 14px;
+        font-weight: 900;
+     }
     .p5 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
         color: rgb(107, 107, 107); 
-        margin-top: 20px; 
-    }    */
+        margin-top: 30px; 
+    }   
+ } 
